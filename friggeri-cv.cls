@@ -56,7 +56,7 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
 
-\setmathfont{XITS Math}
+% \setmathfont{XITS Math}
 
 %%%%%%%%%%
 % Header %
@@ -141,9 +141,18 @@
   #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}%
+    \par\vspace{\parskip}
     #4\vspace{\parsep}%
-  }\\}
+  }\\ \\}
+
+
+%%%%%%%%
+% List %
+%%%%%%%%
+
+\RequirePackage{enumitem}
+\setitemize{noitemsep, topsep=0pt, parsep=0pt,partopsep=0pt, leftmargin=*, label={--}}
 
 
 %%%%%%%%%%%%%%
