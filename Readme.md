@@ -4,11 +4,16 @@ Latest version of my CV, typesetted in Helvetica and using colors inspired by Mo
 Uses TikZ for the header, XeTeX and fontspec to use Helvetica Neue, biblatex to print my publications and textpos for the aside.
 
 # Install
-`brew install Caskroom/cask/mactex`
-`brew install latex-mk`
-
+```bash
+$ brew install Caskroom/cask/mactex
+$ brew install latex-mk
+```
 # Run
-`latexmk -xelatex cv.tex`
+```bash
+$ latexmk -xelatex cv.tex
+OR
+$ latexmk -lualatex cv.tex
+```
 
 # Print Option
 `\documentclass[print]{friggeri-cv}`
