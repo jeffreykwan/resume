@@ -10,9 +10,14 @@ $ brew install latex-mk
 ```
 # Run
 ```bash
-$ latexmk -xelatex cv.tex
+$ latexmk -xelatex -bibtex- cv.tex
 OR
-$ latexmk -lualatex cv.tex
+$ latexmk -lualatex -bibtex- cv.tex
+```
+
+# Clean
+```bash
+$ latexmk -c
 ```
 
 # Print Option

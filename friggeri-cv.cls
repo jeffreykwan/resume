@@ -131,9 +131,9 @@
 %%%%%%%%%%%%%%%%%%%%
 
 \setlength{\tabcolsep}{0pt}
-\newenvironment{entrylist}{%
+\newenvironment{entrylist}{
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
-}{%
+}{
   \end{tabular*}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
@@ -144,7 +144,7 @@
     {\footnotesize\addfontfeature{Color=lightgray} #3}%
     \par\vspace{\parskip}
     #4\vspace{\parsep}%
-  }\\ \\}
+  }\\}
 
 
 %%%%%%%%
@@ -283,7 +283,6 @@
   \sort[direction=descending]{\field{year}}
   \sort[direction=descending]{\field{month}}
 }
-
 
 
 %%%%%%%%%%%%%%%%
