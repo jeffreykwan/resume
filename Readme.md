@@ -13,6 +13,8 @@ $ brew install latex-mk
 $ latexmk -xelatex -bibtex- cv.tex
 OR
 $ latexmk -lualatex -bibtex- cv.tex
+OR
+$ xelatex cv.tex
 ```
 
 # Clean
